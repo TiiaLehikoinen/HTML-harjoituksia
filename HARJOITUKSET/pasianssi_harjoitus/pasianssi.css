@@ -1,0 +1,75 @@
+/*KOMMENTTI*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content{/*KOKO SIVU*/
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 2em;
+}
+
+nav, footer{
+    background-color: antiquewhite; /*ylävalikko - väri*/
+}
+
+a:link { /*kaikkien a elementtien väri*/
+    color: burlywood;
+}
+a:visited {/*kaikkien a elementtien väri kun käytetty*/
+    color: peru;
+}
+
+a:hover {
+    color:chocolate;
+}
+
+.content h1{/*OTSIKKO - Pasi-Anssi*/
+    text-align: center;
+    font-size: 3em;
+    color:peru;
+}
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.esittely {
+    text-align: center;
+    color: burlywood;
+}
+
+.content h2{/*YHTEYSTIEDOT - otsikko*/
+    text-align: center;
+    padding: 1em 2em; /*YHTEYSTIEDOT TEKSTIN SIJAINTI - ylä-ala*/
+    font-size: 2em;/*YHTEYSTIEDOT TEKSTIN KOKO*/
+    color: peru;/*YHTEYSTIEDOT - väri*/
+}
+
+.yhteystiedot {
+    text-align: center;
+}
+
+nav div ul{
+    padding: 2em;
+    display: flex;
+    list-style-type: none;
+    color: aqua; /*jokin estää väriä muuttumasta?*/
+}
+
