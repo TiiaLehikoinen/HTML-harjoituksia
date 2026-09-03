@@ -19,11 +19,11 @@
 - Osa 2 (HTML tekstit ja otsikot)
 - Osa 3 (HTML linkit ja kuvat)
 - Osa 4 (HTML attribuutit)
-- Osa 5 (HTML listat)
-- Osa 6 (HTML taulukot)
 
 ## Tulevat harjoitukset
 
+- Osa 5 (HTML listat)
+- Osa 6 (HTML taulukot)
 - Osa 7 (HTML lomakkeet)
 - Osa 8 (Semanttinen HTML)
 - Osa 9 (Multimedia HTML:ssä)
