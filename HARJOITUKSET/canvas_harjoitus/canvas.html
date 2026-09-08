@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="canvas_harjoitus" content="">
+        <title>Canvas harjoitus</title>
+    </head>
+
+    <body>
+        <!--<canvas> elementti luo piirtoalueen. id atribuutti siksi, etä Javascript löytää sen.-->
+        <canvas id="omaCanvas" width="500" height="400" style="width: 500px; height: 400px;"></canvas>
+        <!--Ensimmäinen koon määrittely on HTML (piirtoalueen resoluutio), toinen on CSS (näyttökoko selaimessa)-->
+        <!--Canvasissa jokainen piste määritellään x- ja y-koordinaateilla. Koordinaatisto alkaa vasemmasta yläkulmasta.-->
+        <!--Koordinaatiston perusteet:
+
+        Alkuperä (0, 0) on vasemmassa yläkulmassa
+        x kasvaa oikealle (X pikseliä vasemmasta reunasta)
+        y kasvaa alaspäin (X pikseliä alaspäin yläreunasta)(tämä on eri kuin matematiikan koordinaatisto!)-->
+        
+        <!--Javascript, funktionaalisuus-->
+        <script>
+            //const=constant; //canvas=muuttuja; //document=HTML sivu; //.=käsky
+            const canvas = document.getElementById("omaCanvas");
+            const ctx = canvas.getContext("2d");
+
+            const kuva = new Image();
+
+                kuva.src = "canvas_kuvat/sydän.png";
+
+                kuva.onload = function() { //Hakee tiedoston levyltä, lataa selaimen välimuistiin ja dekoodaa tiedoston näytettäväksi pikseleiksi.
+                ctx.drawImage(kuva, 260, 160);
+                console.log("Kuva ladattu!"); 
+                };
+                
+                //Suorakulmiot
+                ctx.strokeStyle = "purple"; // Ääriviiva väritys
+                ctx.lineWidth = 2; // Ääriviiva leveys
+                ctx.strokeRect(5, 5, 200, 200); //Ääriviivat=strokeRect //x=5 y=5 leveys x korkeus= 200x200
+
+                ctx.fillStyle = "rgb(255, 0, 0)"; // Kuvion värittäminen (punainen) rgb/rgba, jossa 0.5 on transparency
+                ctx.fillRect(50, 50, 100, 100); //Täytä muoto=fillRect //x=50 y=50 leveys x korkeus= 100x100
+
+                ctx.fillStyle = "rgba(0, 0, 255, 0.5)"; // Kuvion värittäminen (sininen) rgb/rgba, jossa 0.5 on transparency
+                ctx.fillRect(75, 75, 50, 50); //Täytä muoto=fillRect //x=75 y=75 leveys x korkeus= 50x50
+
+                ctx.clearRect(87.5, 87.5, 25, 25); //Poista kuvio=clearReact //x=87.5 y=87.5 leveys x korkeus = 25x25
+
+                //Kolmio
+                ctx.beginPath(); //aloittaa uuden polun, ilman sitä kuvio jatkuu edellisen polun viimeisestä kohdasta
+                ctx.moveTo(300, 50); //siirtyy yläkulmaan x, y
+                ctx.lineTo(350, 150); //viiva oikeaan alakulmaan x, y
+                ctx.lineTo(250, 150); //viiva vasempaan alakulmaan x, y
+                ctx.closePath(); //sulkee polun (palaa yläkulmaan)
+                ctx.fillStyle = "orange"; //väri
+                ctx.fill(); //täyttää polun kuvion
+                ctx.strokeStyle = "purple";
+                ctx.lineWidth = 2;
+                ctx.stroke(); //piirtää reunaviivan
+
+                //Ympyrä (Kokonaisen ympyrän radiaani = 2π, 6,28 radiaania. Puoliympyrä = π, 3,14 radiaania. Neljännesympyrä = π/2, 1,57 radiaania)
+                //JavaScript käyttää math. funktioina radiaaneja, ei asteita.
+                ctx.beginPath();
+                ctx.arc(100, 300, 50, 0, Math.PI *2); //x, y (ympyrän keskipiste), säde (halkaisija 2x säde), aloituskulma, lopetuskulma (= radiaaneina 0 = 3 tunnin suunta, Math.PI * 2 = täysi ympyrä)
+                ctx.closePath();
+                ctx.fillStyle = "rgba(255, 0, 0, 0.75)";
+                ctx.fill();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx. stroke();
+                
+                //Teksti
+                //Täytetty teksti
+                ctx.font = "20px Times New Roman"; //koko ja fontti
+                ctx.fillStyle = "purple"; //väri
+                ctx.fillText("Täytetty teksti", 40, 40); //teksti, x & y 
+
+                //Reunaviivallinen teksti
+                ctx.strokeStyle = "purple"; //väri
+                ctx.lineWidth = 1; //ääriviivan paksuus
+                ctx.strokeText("Reunaviivateksti", 230, 40); //teksti, x & y 
+
+                //Tekstin tasaus
+                ctx.font = "20px Arial";
+                ctx.textAlign = "center"; //keskitys sijainti
+                ctx.fillText("Keskitetty teksti", 300, 300)
+
+                //Tyhjennys & uudelleen piirto
+                setTimeout(function() {
+                    //Tyhjennä
+                    ctx.clearRect(0, 0, canvas.width, canvas.height); //0, 0 = vasen yläkulma. Width ja height tyhjentää kaiken
+                    //Piirrä uusi sisältö
+                    ctx.fillStyle = "aqua";
+                    ctx.fillRect(50, 50, 100, 100); 
+
+                }, 1000);
+
+                setTimeout(function() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    
+                    ctx.drawImage(kuva, 260, 160)
+
+                    ctx.fillStyle = "orange";
+                    ctx.fillRect(50, 50, 100, 100);
+                }, 2000);
+
+
+                setTimeout(function() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    ctx.fillStyle = "pink";
+                    ctx.fillRect(50, 50, 100, 100);
+                }, 3000);
+            
+        </script>
+    </body>
+</html>
