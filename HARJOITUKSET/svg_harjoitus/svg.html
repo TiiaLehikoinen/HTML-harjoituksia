@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SVG | harjoitteet</title>
+    </head>
+    
+        <body>
+            <h1 class="title">SVG | harjoitteet</h1>
+
+            <svg width="600" height="600"viewBox="0 0 600 600"> <!--pikselinäkymä ja sisäinen koordinaatisto--><!--VIEWBOX OLISI VOINUT OLLA 0 0 100 100 JA KAIKKI NUMEROT OLISIVAT JÄRKEVÄMMÄN KOKOISIA. TÄMÄ SKAALAANTUU!-->
+                
+                <!--sisältö-->
+
+                <path d="M 550 550 L 550 5 L 50 5 Q 200 20 130 80 Z" fill="antiquewhite" stroke="black" stroke-width="5"/>
+
+                <ellipse cx="300" cy="470" rx="240" ry="70" fill="lightpink" stroke="aqua" stroke-width="2"opacity="1"></ellipse>
+
+                <circle cx="300" cy="250" r="240" fill="antiquewhite" stroke="white" stroke-width="6"></circle>
+
+                <polyline points="67.8,190 133.31,170 201.11,190 268.91,170 336.71,190 404.51,170 472.31,190 526.4,170" stroke="white" stroke-width="2" fill="none"></polyline>
+
+                <text x="80" y="280" font-family="Times New Roman" font-size="100" 
+                fill="white" stroke="lightpink" stroke-width="1">ARTEMIS</text>
+
+                <line x1="80" y1="300" x2="520" y2="300" stroke="white" stroke-width="2"></line>
+
+                <circle cx="523" cy="274" r="7" fill="white" stroke="lightpink" stroke-width="2"></circle>
+
+                <rect x="517" y="245" width="14" height="14" fill="pink" stroke="white" stroke-width="2"></rect>
+
+                <path d="M 375 7 Q 300 90 225 7 Z" fill="aqua" stroke="pink" stroke-width="2"/> <!--M (move to), L (line to), C (cubic bezier), Q (quadratic bezier), A (arc), Z (close path)-->
+                
+                <g fill="none" stroke="black" stroke-width="5" OPACITY="1">
+                    <rect x="50" y="2" width="500" height="550"></rect>
+                    <circle cx="49" cy="49" r="48"></circle>
+                </g>
+
+                <!--Tekoälyn avulla tuotettu, en osaa siirtää-->
+                <polygon points="50.0,32.5 50.2,31.3 51.2,27.9 53.7,23.4 58.1,19.0 64.1,16.0 71.2,15.3 78.3,17.2 84.4,21.6 88.5,27.8 90.0,35.0 88.5,42.5 84.4,49.7 78.3,56.6 71.2,63.0 64.1,69.0 58.1,74.7 53.7,79.8 51.2,83.9 50.2,86.6 50.0,87.5 49.8,86.6 48.8,83.9 46.3,79.8 41.9,74.7 35.9,69.0 28.8,63.0 21.7,56.6 15.6,49.7 11.5,42.5 10.0,35.0 11.5,27.8 15.6,21.6 21.7,17.2 28.8,15.3 35.9,16.0 41.9,19.0 46.3,23.4 48.8,27.9 49.8,31.3" fill="lightpink" stroke="black" stroke-width="5" opacity="1"></polygon>
+            
+                <path d="M 20 16 L 50 50 L 80 16 Z" fill="aqua" stroke="black" stroke-width="5"/>
+
+            </svg>
+        </body>
+</html>
