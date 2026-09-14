@@ -7,29 +7,63 @@
       <meta name="robots" content="index, follow">
       <meta property="og:title" content="ARTEMIS | luonnonsuojelu organisaatio | Linkit">
       <meta property="og:description" content="Hyödyllisiä linkkejä">
-      <meta property="og:image" content="../kuvat/artemis_logo.png">
-      <link rel="icon" type="image/x-icon" href="../kuvat/artemis_pic.jpg">
-      <link rel="canonial" href="https://www.keuda.fi">
+      <meta property="og:image" content="../artemis_kuvat/artemis_logo.png">
+      <link rel="icon" type="image/x-icon" href="../artemis_kuvat/artemis_pic.jpg">
+      <link rel="canonical" href="https://tiialehikoinen.github.io/HTML-harjoituksia/">
       <title> ARTEMIS | Linkit </title>
    </head>
 
    <body>
-      <a href="../artemis_etusivu/index.html"> <button> Takaisin etusivulle </button> </a>
+      <header id="links-page-header" class="header">
+         <h1 class="project-title" title="ARTEMIS">ARTEMIS | luonnonsuojelu organisaatio</h1>
+            <img id="project-logo" src="../artemis_kuvat/artemis_logo.png" alt="Kreikkalaisen mytologian jumalhahmo Artemiksen profiilikuva ja häneen liitettyä symboliikkaa; metsä, kauris ja kuu." width="200" height="200">
 
-      <h1>Linkit tutkimuksiin</h1>
+         <nav id="header-navigation-bar" class="navigation-bar">
+            <ul>
+               <li><a href="../index.html">Etusivu</a></li>
+               <li><a href="../artemis_muut_sivut/about.html">Tietoa meistä </a></li>
+               <li><a href="../artemis_muut_sivut/donate.html">Lahjoita</a></li>
+               <li><a href="../artemis_muut_sivut/events.html">Tapahtumat</a></li>
+               <li><a href="../artemis_muut_sivut/links.html">Linkit</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!--osio vaihtuu-->
+
+      <main>
+         <content id="links-page-content" class="content">
+            <h1 id="page-title" class="title" title="Linkit">Linkit</h1>
       
-      <h2>Hyödyllisiä linkkejä</h2>
+            <h2 class="title" title="Hyödyllisiä linkkejä">Hyödyllisiä linkkejä</h2>
 
-      <h3>Tutkimukset</h3>
-      <li><a href="https://link.springer.com/chapter/10.1007/978-3-319-54549-3_11"> 
-      Shame: From Defensive Fury to Epistemological Shifts and Political Change - Elisa Aaltola | tutkimusartikkeli </a></li>
-      <li><a href="https://scholarlypublishingcollective.org/uip/jane/article-abstract/4/2/102/227763/Animals-and-the-Human-Imagination-A-Companion-to?redirectedFrom=fulltext"> 
-      Animals and the Human Imagination: A Companion to Animal Studies - Elisa Aaltola | tutkimusartikkeli </a></li>
-        
-      <h3>Kirjallisuus</h3>
-      <li><a href="https://intokustannus.fi/kirja/puhe-elainten-puolesta/"> Puhe eläinten puolesta - Elisa Aaltola | Into kustannus </a></li>
+            <h3 class="subhead" title="Tutkimukset">Tutkimukset</h3>
+               <ul>
+                  <li><a href="https://link.springer.com/chapter/10.1007/978-3-319-54549-3_11">Shame: From Defensive Fury to Epistemological Shifts and Political Change - Elisa Aaltola | tutkimusartikkeli </a></li>
+                  <li><a href="https://scholarlypublishingcollective.org/uip/jane/article-abstract/4/2/102/227763/Animals-and-the-Human-Imagination-A-Companion-to?redirectedFrom=fulltext">Animals and the Human Imagination: A Companion to Animal Studies - Elisa Aaltola | tutkimusartikkeli </a></li>
+               </ul>
 
-      <h3>Järjestöt</h3> 
-      <li><a href="https://elainoikeusakatemia.fi/"> Eläinoikeusakatemia | Nettisivut </a></li>  
+            <h3 class="subhead" title="Kirjallisuus">Kirjallisuus</h3>
+               <ul>
+                  <li><a href="https://intokustannus.fi/kirja/puhe-elainten-puolesta/"> Puhe eläinten puolesta - Elisa Aaltola | Into kustannus </a></li>
+               </ul>
+
+            <h3 class="subhead" title="Järjestöt">Järjestöt</h3> 
+               <ul>
+                  <li><a href="https://elainoikeusakatemia.fi/"> Eläinoikeusakatemia | Nettisivut </a></li>  
+               </ul>
+         </content>
+      </main>
+
+      <!--osio vaihtuu-->
+
+      <footer id="links-page-footer" class="footer">
+         <address class="yhteystiedot">
+               <p><br>ARTEMIS | luonnonsuojelu organisaatio
+               <br>Y-tunnus: 1234567-8
+               <br>Osoite: Metsäpolku 1, 00100 Helsinki
+               <br><a href="mailto:info@artemis.org">Sähköposti: info@artemis.org</a></p>
+         </address>
+      </footer>
    </body>
 </html>
