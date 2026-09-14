@@ -31,66 +31,84 @@
 
           <!--osio vaihtuu--> 
 
-          <main>   
-               <h1 id="page-title" class="title">Lahjoita</h1>
-          
-               <h2 class="title">Anna villille luonnolle mahdollisuus säilyä villinä</h2>
-                    <p class="content">Lahjoituksesi auttaa muuttamaan tutkimustiedon ja suojelusuunnitelmat käytännön toiminnaksi.
-                    <br>ARTEMIS käyttää lahjoitusvaroja luonnonsuojeluhankkeiden ja tutkimuksen rahoittamiseen, ympäristökasvatukseen sekä toimintaan, jonka kautta ihmiset voivat osallistua luonnonsuojeluun.</p>
-
-               <h3 id="amount-title" class="title">Valitse lahjoitussumma</h3>
-                    <!--tee järkivimmällä tavalla toiminnallinen nappi, jonka painallus muistetaan (javascript?)-->
-                    <button>10€</button>
-                    <button>25€</button>
-                    <button>50€</button>
-                    <button>Valitse summa</button>
-
-               <h3 id="frequency-title" class="title">Kuukausi- vai kertalahjoitus?</h3>
-                    <!--tee järkivimmällä tavalla toiminnallinen nappi, jonka painallus muistetaan (javascript?)-->                 
-                    <button>Kuukausilahjoitus</button>
-                    <button>Kertalahjoitus</button>
-
-               <h3 id="contact-title" class="title">Yhteystiedot</h3>
-                    <!--Tee tästä täytettävä kenttä-->
-                    <li><input id="first-name" type="text" aria-describedby="donation-help" placeholder= "Etunimi*" required></li>
-                    <li><input id="last-name" type="text" aria-describedby="donation-help" placeholder= "Sukunimi*" required></li>
-                    <li><input id="email" type="text" aria-describedby="donation-help" placeholder= "Sähköposti*" required></li>
-                    <li><input id="phone" type="text" aria-describedby="donation-help" placeholder= "Puhelinnumero*" required></li>
-                    <!--tee järkivimmällä tavalla toiminnallinen nappi, jonka painallus muistetaan (javascript?)-->
-                    <li><button>LÄHETÄ</button></li>
-
-                    <p id="donation-help">Lähetettyäsi lahjoitustoiveen, saat sähköpostiisi vahvistusviestin ja jatko-ohjeita.</p>
-
-               <h2 class="title">Mihin lahjoituksia käytetään?</h2>
-
-                    <h3 class="subhead">Luonnonsuojeluun</h3>
-                         <p class="content">Rahoitamme hankkeita, joiden tavoitteena on suojella villieläimiä, luonnon monimuotoisuutta ja arvokkaita elinympäristöjä.</p>
-                    
-                    <h3 class="subhead">Tutkimukseen</h3>
-                         <p class="content">Tuemme tutkimusta, joka lisää tietoa luonnon tilasta, siihen kohdistuvista uhista ja suojelutoimien vaikuttavuudesta.</p>
-
-                    <h3 class="subhead">Tietoon ja koulutukseen</h3>
-                         <p class="content">Tuotamme tutkimukseen perustuvaa materiaalia ja koulutusta, joiden avulla ihmiset voivat tehdä luonnon kannalta parempia päätöksiä.</p>
-
-                    <h3 class="subhead">Yhteiseen toimintaan</h3>
-                         <p class="content">Järjestämme vapaaehtoistoimintaa ja tapahtumia, joissa ihmiset voivat osallistua konkreettisesti oman ympäristönsä suojelemiseen.</p>
-
-               <h2 class="title">Tiedä mitä tuet</h2>
-                    <p class="content"><strong>Luottamus edellyttää läpinäkyvyyttä.</strong> Siksi ARTEMIS raportoi avoimesti lahjoitusvarojen käytöstä, rahoitetuista hankkeista ja niiden tuloksista. 
-                    <br>Kerromme myös silloin, kun hankkeen vaikutuksista ei vielä ole riittävästi tietoa. Luonnonsuojelussa lupauksia tärkeämpiä ovat mitattavat tulokset.</p>
-
-               <figure class="illustration-picture">
-                    <img src="../artemis_kuvat/birdviewmetsa.jpg" alt="Metsä kuvattuna puiden latvojen yläpuolelta" width="350" height="350">
-                    <figcaption>Metsä kuvattuna puiden latvojen yläpuolelta.</figcaption>
-               </figure>
+          <main> 
+               <section aria-labelledby="page-title">  
+                    <h1 id="page-title" class="title">Lahjoita</h1>
                
-               
-               <ul>
-                    <li><a href="https://www.beatlesweekend.fi/">Tutustu rahoittamiimme hankkeisiin</a></li>
-               </ul>
+                    <h2 class="title">Anna villille luonnolle mahdollisuus säilyä villinä</h2>
+                         <p class="content">Lahjoituksesi auttaa muuttamaan tutkimustiedon ja suojelusuunnitelmat käytännön toiminnaksi.
+                         <br>ARTEMIS käyttää lahjoitusvaroja luonnonsuojeluhankkeiden ja tutkimuksen rahoittamiseen, ympäristökasvatukseen sekä toimintaan, jonka kautta ihmiset voivat osallistua luonnonsuojeluun.</p>
+               </section>
+
+               <section>
+                    <!--liittyy formiin kun on ensin yksittäisinä alkioina muokattu-->
+                    <h3 id="amount-title" class="title">Valitse lahjoitussumma</h3>
+                         <!--tee järkivimmällä tavalla toiminnallinen nappi, jonka painallus muistetaan (javascript?)-->
+                         <button>10€</button>
+                         <button>25€</button>
+                         <button>50€</button>
+                         <button>Valitse summa</button><!--jos valitaan (if), niin javascriptillä avaa täytettävän tekstikentän johon voi syöttää numeerisen arvon 1 > 999 999-->
+
+                    <h3 id="frequency-title" class="title">Kuukausi- vai kertalahjoitus?</h3>
+                         <!--tee järkivimmällä tavalla toiminnallinen nappi, jonka painallus muistetaan (javascript?)-->                 
+                         <button>Kuukausilahjoitus</button>
+                         <button>Kertalahjoitus</button>
+                    <!--liittyy formiin kun on ensin yksittäisinä alkioina muokattu-->
+
+                    <form>
+                         <fieldset>
+                              <legend>Yhteystiedot</legend>
+
+                              <p><label for="name">Etunimi*</label>
+                              <br><input id="name" name="name" type="text" autocomplete="name" placeholder= "*pakollinen" required></p>
+                              
+                              <p><label for="name">Sukunimi*</label>
+                              <br><input id="name" name="name" type="name" autocomplete="name" placeholder= "*pakollinen" required></p>
+
+                              <p><label for="email">Sähköposti*</label>
+                              <br><input id="email" name="email" type="email" autocomplete="email" placeholder="*pakollinen" required></p>
+
+                              <p><label for="phone-number">Puhelinnumero* </label>
+                              <br><input id="phone-number" name="phone-number" type="phone-number" autocomplete="phone-number" placeholder="(+358 44 123 4567)"></p>
+                              
+                              <button type="submit">Lähetä</button>
+
+                              <p id="donation-help">Lähetettyäsi lahjoitustoiveen, saat sähköpostiisi vahvistusviestin ja jatko-ohjeita.</p>
+                         </fieldset>
+                    </form>
+               </section>
+
+               <section>
+                    <h2 class="title">Mihin lahjoituksia käytetään?</h2>
+
+                         <h3 class="subhead">Luonnonsuojeluun</h3>
+                              <p class="content">Rahoitamme hankkeita, joiden tavoitteena on suojella villieläimiä, luonnon monimuotoisuutta ja arvokkaita elinympäristöjä.</p>
+                         
+                         <h3 class="subhead">Tutkimukseen</h3>
+                              <p class="content">Tuemme tutkimusta, joka lisää tietoa luonnon tilasta, siihen kohdistuvista uhista ja suojelutoimien vaikuttavuudesta.</p>
+
+                         <h3 class="subhead">Tietoon ja koulutukseen</h3>
+                              <p class="content">Tuotamme tutkimukseen perustuvaa materiaalia ja koulutusta, joiden avulla ihmiset voivat tehdä luonnon kannalta parempia päätöksiä.</p>
+
+                         <h3 class="subhead">Yhteiseen toimintaan</h3>
+                              <p class="content">Järjestämme vapaaehtoistoimintaa ja tapahtumia, joissa ihmiset voivat osallistua konkreettisesti oman ympäristönsä suojelemiseen.</p>
+               </section>
+
+               <section>
+                    <h2 class="title">Tiedä mitä tuet</h2>
+                         <p class="content"><strong>Luottamus edellyttää läpinäkyvyyttä.</strong> Siksi ARTEMIS raportoi avoimesti lahjoitusvarojen käytöstä, rahoitetuista hankkeista ja niiden tuloksista. 
+                         <br>Kerromme myös silloin, kun hankkeen vaikutuksista ei vielä ole riittävästi tietoa. Luonnonsuojelussa lupauksia tärkeämpiä ovat mitattavat tulokset.</p>
+                         
+                         <ul>
+                              <li><a href="https://www.beatlesweekend.fi/">Tutustu rahoittamiimme hankkeisiin</a></li>
+                         </ul>
+
+                    <figure class="illustration-picture">
+                         <img src="../artemis_kuvat/birdviewmetsa.jpg" alt="Metsä kuvattuna puiden latvojen yläpuolelta" width="350" height="350">
+                         <figcaption>Metsä kuvattuna puiden latvojen yläpuolelta.</figcaption>
+                    </figure>
+               </section> 
           </main>
-
-          <!--osio vaihtuu-->
 
           <footer id="donate-page-footer" class="footer">
                <address class="yhteystiedot">

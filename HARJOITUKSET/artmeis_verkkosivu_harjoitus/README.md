@@ -19,26 +19,23 @@
 - Osa 2 (HTML tekstit ja otsikot)
 - Osa 3 (HTML linkit ja kuvat)
 - Osa 4 (HTML attribuutit)
-- **HTML rakenne tarkistettu (https://validator.w3.org/nu/?utm_source=chatgpt.com)**
+- HTML rakenne tarkistettu (https://validator.w3.org/nu/?utm_source=chatgpt.com)
+- Osa 5 (HTML listat)
+- Osa 7 (HTML lomakkeet)
+- Osa 8 (Semanttinen HTML)
 
 ## Tulevat harjoitukset
 
-- Osa 5 (HTML listat)
 - Osa 6 (HTML taulukot)
-- Osa 7 (HTML lomakkeet)
-- Osa 8 (Semanttinen HTML)
 - Osa 9 (Multimedia HTML:ssä)
 - Osa 10 (Saavutettava HTML)
 - Osa 11 (Validointi ja laadun tarkastus)
 - Osa 12 (Meta ja SEO)
 - Osa 13 (HTML:n apit)
-- Osa 14 (Canvas)
-- Osa 15 (SVG)
 - Osa 16 (Saavutettavuus)
 - Osa 17 (HTML 5:n ominaisuudet)
 - Osa 18 (Projektit)
 - Osa 19 (Parhaat käytännöt)
-- Osa 20 (Kertaus)
 
 
 ## Tekijä

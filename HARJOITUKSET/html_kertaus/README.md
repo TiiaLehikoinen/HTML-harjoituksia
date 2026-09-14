@@ -1,6 +1,6 @@
 # 10.9.2026 | HTML-kertaus
 
-- Osa 20
+- Osa 20 (Kertaus)
 
 ## Muistiinpanot:
 
