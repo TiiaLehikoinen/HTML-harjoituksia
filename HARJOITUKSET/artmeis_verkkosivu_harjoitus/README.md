@@ -1,4 +1,4 @@
-# ARTEMIS - *Villin luonnon suojelun puolesta* Verkkosivu
+# ARTEMIS - *Villin luonnonsuojelun puolesta* -verkkosivu
 
 *Tämä projekti on HTML rakenne harjoitus työ, sisältäen head, body ja sisältö elementit.*
  
