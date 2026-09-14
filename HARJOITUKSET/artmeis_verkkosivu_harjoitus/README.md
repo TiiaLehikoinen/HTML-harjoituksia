@@ -19,6 +19,7 @@
 - Osa 2 (HTML tekstit ja otsikot)
 - Osa 3 (HTML linkit ja kuvat)
 - Osa 4 (HTML attribuutit)
+- **HTML rakenne tarkistettu (https://validator.w3.org/nu/?utm_source=chatgpt.com)**
 
 ## Tulevat harjoitukset
 
