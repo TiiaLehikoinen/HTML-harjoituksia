@@ -1,0 +1,26 @@
+/*MUISTIINPANOT*/
+
+/*x tai x, z, y {tyyli} = elementti*/
+/*.x {tyyli} = class*/
+/*#x {tyyli} = id*/
+
+/*HEX-värikoodi (heksadesimaalinen värikoodi/RGB-väriarvo) = #dbeafe*/
+/*(00-ff, jossa 00 = ei lainkaan kyseistä väriä, 
+- ff = maksimaalinen määrä väriä, 00 00 00 = musta 
+- ff ff ff = valkoinen
+- ff 00 00 = punainen 
+- 00 ff 00 = vihreä 
+- 00 00 ff = sininen)*/
+/*hae: hex color picker, HTML color picker tai CSS color picker (Coolors, MDN Color Picker, W3Schools HTML Color Picker, Tailwind CSS Colors)*/
+
+/*px = pikseli (border: 1px solid;)*/
+/*rem = suhteessa sivun perusfonttikokoon (font-size: 1,5rem;)*/
+/*% = suhteessa vanhempaan elementtiin (width: 80%)*/
+/*vw/vh (view width/view height) = suhteessa näkyvään leveyteen/korkeuteen (min-height: 60vh;)*/
+
+
+.subhead { 
+    color: white; background: green; 
+    padding: 1rem; /*sisätila, jotta teksti ei kosketa reunoja*/
+    border-radius: 8px; /*pyöristetyt kulmat*/
+}
