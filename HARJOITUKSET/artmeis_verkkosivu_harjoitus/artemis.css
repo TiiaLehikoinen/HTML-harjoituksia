@@ -1,10 +1,12 @@
 /*MUISTIINPANOT*/
 
+/*selector = elementti (mikä muutetaan), ilmoituslohko = {} (rajaa muutokset valittuihin elementteihin), property = x: (mitä muutetaan), value x (millaiseksi muutetaan), lopetus = ; (ilmoitus päättyy)*/
+
 /*x tai x, z, y {tyyli} = elementti*/
 /*.x {tyyli} = class*/
 /*#x {tyyli} = id*/
 
-/*HEX-värikoodi (heksadesimaalinen värikoodi/RGB-väriarvo) = #dbeafe*/
+/*HEX-värikoodi (heksadesimaalinen värikoodi) = #dbeafe*/
 /*(00-ff, jossa 00 = ei lainkaan kyseistä väriä, 
 - ff = maksimaalinen määrä väriä, 00 00 00 = musta 
 - ff ff ff = valkoinen
@@ -13,14 +15,109 @@
 - 00 00 ff = sininen)*/
 /*hae: hex color picker, HTML color picker tai CSS color picker (Coolors, MDN Color Picker, W3Schools HTML Color Picker, Tailwind CSS Colors)*/
 
+/*Värien merkintätavat:
+-värinimi (purple;)
+-HEX (#8b5cf6;)
+-RGB (red, green, blue/rgb(51, 65, 85);)
+-hsl ((262 83% 58%);)*/
+
+
 /*px = pikseli (border: 1px solid;)*/
 /*rem = suhteessa sivun perusfonttikokoon (font-size: 1,5rem;)*/
 /*% = suhteessa vanhempaan elementtiin (width: 80%)*/
 /*vw/vh (view width/view height) = suhteessa näkyvään leveyteen/korkeuteen (min-height: 60vh;)*/
 
+/*Fontit: font-family: Arial, font-size: 1rem, line-height: 1.6, text-align: left,*/
+
+/*tausta ja kulmat: background-color: #ffffff, border: 1px solid #000000 (leveys, tyyli, väri), border-radius: 12px*/
+
+/*HTML → DOM = Selain rakentaa HTML-elementeistä puurakenteen (DOM).
+CSS → CSSOM = CSS-säännöistä muodostuu selaimen tyylimalli.
+Renderöinti = Selain yhdistää rakenteen ja tyylit, laskee asettelun ja piirtää sivun.
+!CSS ei muuta HTML-tiedostoa — selain tulkitsee molemmat ja muodostaa lopputuloksen.!*/
+
+/*Cascade: .x on tarkempi valitsin kuin pelkkä x. Toisin sanoen: samasta elementistä voi kilpailla useita sääntöjä, ja täsmällisempi voittaa.*/
+
+/*Periytyminen: osa ominaisuuksista siirtyy vanhemmalta lapsille — esim. color ja monet fonttiominaisuudet. Mutta margin, padding ja border eivät yleensä periydy.*/
+
+body { /*koko sivu*/
+    background-color: lightyellow;
+    color: rgb(116, 141, 71);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header { /*Pääosio*/
+    background-color: lightgoldenrodyellow;
+    color: olive;
+    padding: 1px;
+}
+
+h1 { /*Pääotsikko (ARTEMIS | luonnonsuojeorganisaatio*/
+    color: darkolivegreen;
+    font-size: 40px;
+    float: right;
+    margin-right: 90px;
+    margin-top: 70px;
+}
+
+h2 {
+    color:darkolivegreen;
+    font-size: x-large;
+}
+
+header nav { /*päävalikko*/
+    background-color: darkolivegreen;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+header nav ul { /*päävalikon lista*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+a:link {
+    color: darkkhaki;
+}
+
+a:visited {
+    color: darkkhaki;
+}
+
+a:hover {
+    color: rgb(216, 211, 122);
+}
 
 .subhead { 
-    color: white; background: green; 
+    color: darkkhaki; 
+    background: darkolivegreen; 
     padding: 1rem; /*sisätila, jotta teksti ei kosketa reunoja*/
-    border-radius: 8px; /*pyöristetyt kulmat*/
+    border-radius: 10px; /*pyöristetyt kulmat*/
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.highlight {
+    color: darkkhaki;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#tule-mukaan {
+    background-color: rgb(255, 255, 234);
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
 }
