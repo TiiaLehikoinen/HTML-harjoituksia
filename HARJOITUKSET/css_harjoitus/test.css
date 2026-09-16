@@ -1,0 +1,93 @@
+/*MUISTIINPANOT*/
+
+/*selector = elementti (mikä muutetaan), ilmoituslohko = {} (rajaa muutokset valittuihin elementteihin), property = x: (mitä muutetaan), value x (millaiseksi muutetaan), lopetus = ; (ilmoitus päättyy)*/
+
+/*x tai x, z, y {tyyli} = elementti*/
+/*.x {tyyli} = class*/
+/*#x {tyyli} = id*/
+
+/*HEX-värikoodi (heksadesimaalinen värikoodi) = #dbeafe*/
+/*(00-ff, jossa 00 = ei lainkaan kyseistä väriä, 
+- ff = maksimaalinen määrä väriä, 00 00 00 = musta 
+- ff ff ff = valkoinen
+- ff 00 00 = punainen 
+- 00 ff 00 = vihreä 
+- 00 00 ff = sininen)*/
+/*hae: hex color picker, HTML color picker tai CSS color picker (Coolors, MDN Color Picker, W3Schools HTML Color Picker, Tailwind CSS Colors)*/
+
+/*Värien merkintätavat:
+-värinimi (purple;)
+-HEX (#8b5cf6;)
+-RGB (red, green, blue/rgb(51, 65, 85);)
+-hsl ((262 83% 58%);)*/
+
+
+/*px = pikseli (border: 1px solid;)*/
+/*rem = suhteessa sivun perusfonttikokoon (font-size: 1,5rem;)*/
+/*% = suhteessa vanhempaan elementtiin (width: 80%)*/
+/*vw/vh (view width/view height) = suhteessa näkyvään leveyteen/korkeuteen (min-height: 60vh;)*/
+
+/*Fontit: font-family: Arial, font-size: 1rem, line-height: 1.6, text-align: left,*/
+
+/*tausta ja kulmat: background-color: #ffffff, border: 1px solid #000000 (leveys, tyyli, väri), border-radius: 12px*/
+
+/*HTML → DOM = Selain rakentaa HTML-elementeistä puurakenteen (DOM).
+CSS → CSSOM = CSS-säännöistä muodostuu selaimen tyylimalli.
+Renderöinti = Selain yhdistää rakenteen ja tyylit, laskee asettelun ja piirtää sivun.
+!CSS ei muuta HTML-tiedostoa — selain tulkitsee molemmat ja muodostaa lopputuloksen.!*/
+
+/*Cascade: .x on tarkempi valitsin kuin pelkkä x. Toisin sanoen: samasta elementistä voi kilpailla useita sääntöjä, ja täsmällisempi voittaa.*/
+
+/*Periytyminen: osa ominaisuuksista siirtyy vanhemmalta lapsille — esim. color ja monet fonttiominaisuudet. Mutta margin, padding ja border eivät yleensä periydy.*/
+
+/*Cascade järjestys: elementi, class, id, !important*/
+
+/*Yhdistelmä selectorit: -
+- x väilyönti y = jälkeläinen (article p) 
+- > = suora lapsi (.card > h2) 
+- + = heti seuraava sisarus (h2 + p) 
+- ~ = kaikkiin´paitsi ensimmäisseen lapseen/myöhemmät lapset (h2 ~ p)*/
+
+/*Atribuuttivalitsin: input [required] {}*/
+
+/*Pseudoluokka: a:hover (Mitä käyttäjä tekee sivustolla)*/ 
+
+/*:x (minkä ominaisuuden sisällä)*/
+
+/*:hover (osoitin elementin päällä ), :focus (kun ollaan atribuutin päällä), :active (kun atribuutti on valittu)*/
+
+/*Pseudorakenne: li:first-child, li:last-child, li:nth-child(odd/even), li:nth-child(3), li/.luokka/#id:only-child*/
+
+/*:not(.x) ei huomioida () selectoria, :is(x, y, z)  ja :where(a, b, c) , .x:has() kun elementillä on ()*/ 
+
+/*.x::after = selektorin jälkeen, #x::before = ennen selektoria, x::first-line = luokan ensimmäinen*/
+
+/*specificity (yksinkertaisesti) = !important (.x {color: red !important}, id, class, type = 1-1-1-1. Selsin luke ylhäältä alas, eli alin voittaa. Mitä tarkempi, sitä vahvempi*/ 
+
+/*Casacde layers - opiskele itse*/
+
+/*CSS-nesting: & = viittaa vanhempi-selectoriin, mutta on sen sisällä (.x {padding: 1rem; & x {margin-top: 0;}}*/
+
+body {
+    background-color: darkseagreen;
+}
+
+article > h2 {
+    color: white;
+    font-weight: 900;
+}
+
+article p {
+    color: whitesmoke;
+}
+
+h2 + p {
+    color: white;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+p:nth-child(odd) {
+    background-color: rosybrown;
+}
+
