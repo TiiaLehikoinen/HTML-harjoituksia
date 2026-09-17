@@ -8,9 +8,13 @@ body {
 
 header { 
     background-color: lightgoldenrodyellow;
-    color: olive;
     border: 5px solid;
     border-color: darkolivegreen;
+    margin: 0px; /*headerin ympärillä body värejä. Miinus hetkellinen ratkaisu.*/
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 header img {
@@ -56,11 +60,12 @@ a:hover {
 h2 {
     color:darkolivegreen;
     font-size: x-large;
+    text-align: center;
 }
 
 h3 {
     color: darkkhaki;
-    font-size: large;
+    font-size: x-large;
 }
 
 .subhead { 
@@ -132,16 +137,16 @@ input:focus {
     background-color: white;
 }
 
-#tietojen-jako-hyväksyntä:checked { 
-    accent-color: white;
-}
-
 #custom-amount {
     display:none;
 }
 
-#choose-amount:checked ~ #custom-amount {
+#choose-free-amount:checked ~ #custom-amount {
     display: inline-block;
+}
+
+#tietojen-jako-hyväksyntä:checked { 
+    accent-color: white;
 }
 
 form button {

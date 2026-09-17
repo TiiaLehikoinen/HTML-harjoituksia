@@ -62,22 +62,94 @@ Renderöinti = Selain yhdistää rakenteen ja tyylit, laskee asettelun ja piirt�
 
 /*.x::after = selektorin jälkeen, #x::before = ennen selektoria, x::first-line = luokan ensimmäinen*/
 
-/*specificity (yksinkertaisesti) = !important (.x {color: red !important}, id, class, type = 1-1-1-1. Selsin luke ylhäältä alas, eli alin voittaa. Mitä tarkempi, sitä vahvempi*/ 
+/*specificity (selectorin painoarvo) = !important (.x {color: red !important}, id, class, type = 1-1-1-1. 
+Testataan vasemmalta oikealle, merkiten 0-0-1 (p{})/1-0-0(id{})/(id class{}) 1-1-0.
+Selain lukee ylhäältä alas, eli alin voittaa. Mitä tarkempi, sitä vahvempi.
+Lasketaan painoarvo: 0-0-1 = 0x2^2 + 0x2^1 + 1x2^0 JA ALOITETAAN OIKEALTA VASEMMALLE*/ 
 
 /*Casacde layers - opiskele itse*/
 
 /*CSS-nesting: & = viittaa vanhempi-selectoriin, mutta on sen sisällä (.x {padding: 1rem; & x {margin-top: 0;}}*/
 
-body {
+/*Opettele @layer itse*/
+
+/*Box-model = html elementti muodostaa boxin, missä on sisältö, sisätila, reuna ja ulkotila 
+1. content - sisältö
+2. padding - sisätila (sisällön ja reunan välissä)
+3. border - reuna
+4.margin - ulkotila
+
+esim. .card {
+max/min-width: 300px; 
+min/max-height: 100px;
+padding: 24px X X X
+} 
+
+(YKSI KOMENTO KOSKEE [N] E [S] W)
+
+esim. .card { border: 2px solid red;}
+.avatar {border-radius: 50%;}
+.card {margin: 14px (tai rem);}
+
+box-sizing: border-box;/box-sizing: content-box; (Voidaan määrittää koko sivulle. Mahdollistaa laskennan pois jättämisen boxin sisätilasta! margin vaikuttaa ulkopuolella silti + x)
+width: 300px;
+padding: 20px;
+border: 5px;
+
+Kokonaisleveys= 300px + 40px + 10px = 350px ulkoleveys*/
+
+/*rem = X x oletuskoko*/
+
+/*overflow: auto;*/
+
+/*Margin saattaa mergautua toiseen marginaaliin. Yleensä sulautumistilanteessa margin on suuremman marginin koko, mutta ei aina.*/
+
+/*in-line-block = mahdollistaa vierekkäiset boxit*/
+
+/*logical properties: margin-inline, padding-inline*/
+
+/* TARKISTA:
+-content koko
+-padding koko
+-border paksuus
+-margin jokasuunnassa
+-box sizing
+-computed width/height*/
+
+/*content-box (oletus) vai border-box (määritellään manuallisesti)*/
+
+/*prismic.io/blog/css-hover-effects (Erilaisia hover efektejä) */
+
+body { /*koko homma*/
     background-color: darkseagreen;
 }
 
-article > h2 {
+article > h2 { /*artikkelin ensimmäinen h2*/
     color: white;
     font-weight: 900;
 }
 
-article p {
+.card { /*sisältö 1*/
+    box-sizing: border-box;
+    max-width: 360px;
+    padding: 1.5rem;
+    border: 1px solid rosybrown;
+    border-radius: 1rem;
+    margin: 12px 0 0 0;
+    text-align: center;
+}
+
+.container {/*sisältö 2*/
+    box-sizing:border-box;
+    max-width: 200px;
+    padding: 1rem;
+    border: 5px dotted rosybrown;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+article p { /*artikkelin sisällä kaikki p:t*/
     color: whitesmoke;
 }
 

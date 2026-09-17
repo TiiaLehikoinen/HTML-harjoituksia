@@ -1,0 +1,52 @@
+body {
+    background-color: linen;
+}
+
+h1 {
+    color:rgb(155, 107, 107);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+.pricing-card {
+    box-sizing: border-box;
+    display: inline-block;
+    color: rosybrown;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    border: 5px dotted rosybrown;
+    border-radius: 25%;
+    background-color: oldlace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.pricing-card:hover {
+    background-color: mistyrose;
+    border-color: rgb(155, 107, 107);
+}
+
+.cta-button {
+    box-sizing: border-box;
+    color: rosybrown;
+    background-color: oldlace;
+    padding: 10px;
+    border: 3px solid rosybrown;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.cta-button:hover {
+    background-color: rgb(255, 234, 210);
+    border: 3px dotted rosybrown;
+    transform: scaleX(1.1);
+}
