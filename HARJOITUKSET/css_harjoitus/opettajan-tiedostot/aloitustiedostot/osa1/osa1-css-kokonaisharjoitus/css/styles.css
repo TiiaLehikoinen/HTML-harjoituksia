@@ -1,0 +1,102 @@
+
+body {
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  line-height: 20px;
+  color: sienna;
+  background-color: wheat;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+
+#top {
+  border-bottom: 5px solid sienna;
+}
+
+a {
+  color:rgb(255, 248, 238);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color:sienna;
+  margin: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2, h3 {
+  font-size: x-large;
+}
+
+.card__badge {
+  color: white;
+}
+
+.brand {
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: sienna;
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  justify-content: space-evenly;
+  margin: 0 200px;
+}
+
+.nav-list a {
+  color: sienna;
+  text-decoration: underline;
+}
+
+.hero {
+  box-sizing: border-box;
+  background-color: rgb(242, 224, 189);
+  padding: 30px;
+  border: 3px dotted sienna;
+  border-radius: 30px;
+
+}
+
+.hero__lead {
+  margin: 40px;
+}
+
+.card {
+  margin: 20px;
+  padding: 40px;
+  background-color:tan;
+  border: 2px solid sienna;
+  border-radius: 30px;
+}
+
+.card__text {
+  margin: 40px;
+}
+
+.skip-link, .button {
+  color: wheat;
+  border: 2px solid sienna;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgb(172, 95, 59);
+  text-decoration: none;
+}
+

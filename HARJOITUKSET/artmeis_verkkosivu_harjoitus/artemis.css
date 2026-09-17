@@ -4,13 +4,14 @@ body {
     background-color: lightyellow;
     color: rgb(116, 141, 71);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100%;
 }
 
 header { 
     background-color: lightgoldenrodyellow;
     border: 5px solid;
     border-color: darkolivegreen;
-    margin: 0px; /*headerin ympärillä body värejä. Miinus hetkellinen ratkaisu.*/
+    margin: -7px; /*headerin ympärillä body värejä. Miinus hetkellinen ratkaisu.*/
     min-width: 100%;
     max-width: 100%;
     min-height: 100%;
@@ -45,6 +46,10 @@ header nav ul {
     padding: 1rem;
 }
 
+header a {
+    text-decoration: none;
+}
+
 a:link {
     color: darkkhaki;
 }
@@ -55,6 +60,23 @@ a:visited {
 
 a:hover {
     color: rgb(216, 211, 122);
+}
+
+.in-page-navigation {
+    justify-content: space-evenly;
+}
+
+.in-page-navigation ul {
+    display: flex;
+}
+
+.in-page-navigation li {
+    list-style-type: none;
+}
+
+.in-page-navigation a {
+    text-decoration: none;
+    margin-right: 50px;
 }
 
 h2 {
@@ -77,6 +99,18 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+footer {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    border: 5px solid darkolivegreen;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+footer address {
+    color: darkolivegreen;
+}
+
 /*INDEX SIVUN CSS*/
 
 .highlight {
@@ -93,19 +127,6 @@ h3 {
     padding-left: 1px;
     padding-right: 1px;
     border-radius: 10px;
-}
-
-footer {
-    background-color: lightgoldenrodyellow;
-    text-align: center;
-    border: 5px solid;
-    border-color: darkolivegreen;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-footer address {
-    color: darkolivegreen;
 }
 
 /*DONATE SIVUN CSS*/

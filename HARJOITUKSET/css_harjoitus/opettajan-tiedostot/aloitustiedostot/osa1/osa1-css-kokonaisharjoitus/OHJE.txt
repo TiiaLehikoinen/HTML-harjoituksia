@@ -1,0 +1,40 @@
+CSS-KOKONAISHARJOITUS – OSA 1
+====================================
+
+Tavoite
+-------
+Tyylittele valmis HTML-esittelysivu ulkoisella CSS-tiedostolla.
+Harjoittelet CSS-sääntöjä, valitsimia, värejä, mittoja, fontteja ja reunoja.
+
+Tiedostot
+---------
+index.html          Valmis HTML-rakenne. Älä siirrä tiedostoa.
+css/styles.css      Täydennettävä CSS-tiedosto.
+
+Työohje
+-------
+1. Pura ZIP-paketti niin, että kansiorakenne säilyy.
+2. Avaa osa1-css-kokonaisharjoitus-kansio koodieditorissa.
+3. Avaa index.html selaimessa.
+4. Täydennä css/styles.css-tiedoston tehtäväkohdat yksi kerrallaan.
+5. Päivitä selain jokaisen muutoksen jälkeen.
+6. Tarkista lopuksi selaimen kehittäjätyökaluilla, että CSS latautuu.
+
+Pakolliset asiat
+----------------
+- ulkoinen css/styles.css on linkitetty index.html-tiedostoon
+- vähintään yksi elementtivalitsin
+- vähintään yksi luokkavalitsin
+- vähintään yksi ID-valitsin
+- vähintään yksi ryhmittelyvalitsin
+- värit, fontti, mitat, sisätila, ulkoväli, reuna ja pyöristys
+- vähintään yksi oma CSS-kommentti
+
+Rajoitus
+--------
+Älä käytä tässä osassa Flexboxia tai Gridiä. Ne opetellaan myöhemmin.
+
+Huomaa
+------
+Oma ulkoasusi saa olla erilainen kuin malliratkaisu, kunhan kaikki
+pakolliset asiat on toteutettu ja teksti pysyy helppolukuisena.
